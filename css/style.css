@@ -148,6 +148,10 @@ table th, table td {
   padding: 5px;
 } 
 
+#geography img {
+  border: 2px solid black;
+}
+
 /* People and Society section */
 #people-and-society h2{
   color: #7393B3;
