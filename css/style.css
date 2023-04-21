@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Righteous&display=swap');
+
+
+body {
+  font-family: "Noto Sans", "Verdana", "Arial", sans-serif;
+  font-size: 18px;
+  color: #000;
+  background-color: #FFF;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+/* Header */
+header {
+  padding: 10px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Righteous", "Verdana", "Ariel", sans-serif;
+  color: #0000FF;
+  margin: 0;
+}
+
+nav ul {
+  margin: 10px 0px 0px 0px;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+/* top links */
+nav ul li a {
+  color: #000;
+  padding: 5px 10px;
+}
+
+nav ul li a:link {
+  color: #000;
+}
+
+nav ul li a:visited {
+  color: #888;
+}
+
+nav ul li a:hover {
+  background-color: #d3d3d3;
+}
+
+nav ul li a:active {
+  color: #f00;
+}
+
+/* Main section */
+
+article {
+  padding: 0px 20px;
+}
+
+/* grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 6fr 2fr; 
+  grid-gap: 20px; 
+  max-width: auto;
+  min-width: 400px;
+  grid-template-areas: 
+  "background background flag"
+  ". geography ."  
+  ". people-and-society ."
+  ". environment ."
+  "footer footer footer";
+}
+
+#background {
+  grid-area: background;
+}
+
+#flag {
+  grid-area: flag;
+}
+
+#geography {
+  grid-area: geography;
+}
+
+#people-and-society {
+  grid-area: people-and-society;
+}
+
+#environment {
+  grid-area: environment;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* background section */ 
+#background h2 {
+  color: #0096FF;
+}
+
+#background p {
+  padding-left: 20px;
+}
+
+/* flag section */
+#flag img {
+  padding: 70px 0px;
+}
+
+/* Geography section */ 
+#geography h2{
+  color: #7393B3;
+}
+
+#geography article {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #000;
+  padding: 5px;
+} 
+
+/* People and Society section */
+#people-and-society h2{
+  color: #7393B3;
+}
+
+#people-and-society article {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+table th, table td {
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+/* Environment section */
+#environment h2{
+  color: #7393B3;
+}
+
+/* Footer section */
+#footer a {
+  color: #0000EE;
+}
+
+#footer a:link {
+  color: #0000EE;
+}
+
+#footer a:visited {
+  color: #551A8B;
+}
+
+#footer a:hover {
+  color: #0096FF;
+}
+
+#footer a:active {
+  color: #000080;
+}
