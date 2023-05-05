@@ -165,6 +165,11 @@ h1 {
 
 
     /* TABLE */
+    #highlights h3 {
+        margin-top: 60px;
+        margin-bottom: 0px;
+    }
+
     #highlights table {
         margin: 0 auto;
     }
@@ -222,6 +227,7 @@ h1 {
       
       #nikiya-text {
         grid-area: nikiya-text;
+        padding: 5px;
       }
       
       #arabian-image {
@@ -230,6 +236,7 @@ h1 {
       
       #arabian-text {
         grid-area: arabian-text;
+        padding: 5px;
       }
       
       #sugar-image {
@@ -238,6 +245,7 @@ h1 {
       
       #sugar-text {
         grid-area: sugar-text;
+        padding: 5px;
       }
 
     /*prjects section*/
