@@ -1,197 +1,326 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans:wght@400;700&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Noto+Sans&family=Sigmar&display=swap');
 
-
-body {
-  font-family: "Noto Sans", "Lato", "Arial", sans-serif;
-  font-size: 18px;
-  color: #000;
-  background-color: #FFF;
-  line-height: 1.25;
-  font-weight: 400;
+/* everything styles */
+html, body {
+    margin: 20px;
+    padding: 0;
+    font-family: "Noto Sans", "Ariel", sans-serif; 
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #7d7d7d;
+  }
+figcaption {
+  font-size: 12px
 }
-
-/* Header */
-header {
-  padding: 10px;
-}
-
 h1 {
-  font-size: 50px;
-  font-family: "Righteous", "Lato", "Ariel", sans-serif;
-  color: #0000FF;
-  margin: 0;
-}
+    font-size: 70px;
+    font-family: "Kanit", "Ariel", sans-serif;
+    color: #e7bc3a;
+    margin: 0;
+  }
 
-nav ul {
-  margin: 10px 0px 0px 0px;
-  padding: 0;
-}
+  /* links */
+  nav ul {
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  nav ul li a {
+    color: #ffffff;
+    padding: 5px 10px;
+  }
+  
+  nav ul li a:link {
+    color: #000;
+  }
+  
+  nav ul li a:visited {
+    color: #bdbdbd;
+  }
+  
+  nav ul li a:hover {
+    background-color: #d3d3d3;
+  }
+  
+  nav ul li a:active {
+    color: #f00;
+  }
 
-nav ul li {
-  display: inline;
-}
+  #footer a {
+    color: #ffffff;
+    padding: 5px 10px;
+  }
+  
+  #footer a:link {
+    color: #000;
+  }
+  
+  #footer a:visited {
+    color: #bdbdbd;
+  }
+  
+  #footer a:hover {
+    background-color: #d3d3d3;
+  }
+  
+  #footer a:active {
+    color: #f00;
+  }
 
-/* top links */
-nav ul li a {
-  color: #000;
-  padding: 5px 10px;
-}
+  /* index text settings */
+  #index-words h1 {
+    font-size: 60px;
+    color: #e7bc3a;
+  }
+  #index-words h2 {
+    font-size: 35px;
+    color: #000000;
+  }
 
-nav ul li a:link {
-  color: #000;
-}
+  #index-words h3 {
+    font-size: 30px;
+    color:#000000;
+  }
 
-nav ul li a:visited {
-  color: #888;
-}
+  #index-words p, ul, footer {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+  }
 
-nav ul li a:hover {
-  background-color: #d3d3d3;
-}
+  #index-picture img{
+    border: 3px solid #e7bc3a;
+  }
+  
 
-nav ul li a:active {
-  color: #f00;
-}
+/*index grid*/
+  .grid-index {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10px;
+        max-width: auto;
+        min-width: 400px;
+        grid-template-areas: 
+        "index-picture index-words index-words"
+    }
+    #index-picture {
+        grid-area: index-pictures;
+    }
 
-/* Main section */
+    #index-words {
+        grid-area: index-words;
+    }
 
-article {
-  padding: 0px 20px;
-}
 
-/* grid */
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 6fr 2fr; 
-  grid-gap: 20px; 
-  max-width: auto;
-  min-width: 400px;
-  grid-template-areas: 
-  "background background flag"
-  ". geography ."  
-  ". people-and-society ."
-  ". environment ."
-  "footer footer footer";
-}
+  /*dance section*/
 
-#background {
-  grid-area: background;
-}
+    .grid-topdance {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 0px;
+        max-width: auto;
+        min-width: 200px;
+        grid-template-areas: 
+        "dance-img1 dance-img2 dance-img3"
+    }
 
-#flag {
-  grid-area: flag;
-}
+    #dance-img1 {
+        grid-area: dance-img1;
+    }
+        
+    #dance-img2 {
+        grid-area: dance-img2;
+    }
+        
+    #dance-img3 {
+        grid-area: dance-img3;
+    }
 
-#geography {
-  grid-area: geography;
-}
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+    
+    .grid-career {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-gap: 20px;
+        max-width: auto;
+        min-width: 200px;
+        grid-template-areas: 
+        "career-background highlights"
+    }
 
-#people-and-society {
-  grid-area: people-and-society;
-}
+    #career-background {
+        grid-area: career-background;
+    }
+      
+    #highlights {
+        grid-area: highlights;
+      }
 
-#environment {
-  grid-area: environment;
-}
 
-#footer {
-  grid-area: footer;
-}
+    /* TABLE */
+    #highlights table {
+        margin: 0 auto;
+    }
+    
+    #highlights table {
+        border: 1px solid #e7bc3a;
+        border-collapse: collapse;
+    }
+    
+    #highlights td, #highlights th {
+        padding: 8px;
+    }
 
-main {
-  padding: 20px;
-}
+    #highlights th {
+        background-color: #ffffff;
+        color:#000;
+        font-weight: bold;
+    }
 
-h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
+    th, td {
+        border: 1px solid #e7bc3a;
+    }
+      
+    #highlights h3 {
+        text-align:center;
+    }
+  
+    .dance h2 {
+        font-size: 46px;
+        color:#e7bc3a;
+    }
+    .dance h3 {
+        font-size: 32px;
+    }
 
-p {
-  margin-bottom: 10px;
-}
+    .grid-performances {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 20px;
+        max-width: auto;
+        min-width: 400px;
+        grid-template-areas: 
+        "nikiya-image nikiya-text"
+        "arabian-image arabian-text"
+        "sugar-image sugar-text"
+    }
 
-img {
-  max-width: 100%;
-}
+      #nikiya-image {
+        grid-area: nikiya-image;
+      }
+      
+      #nikiya-text {
+        grid-area: nikiya-text;
+      }
+      
+      #arabian-image {
+        grid-area: arabian-image;
+      }
+      
+      #arabian-text {
+        grid-area: arabian-text;
+      }
+      
+      #sugar-image {
+        grid-area: sugar-image;
+      }
+      
+      #sugar-text {
+        grid-area: sugar-text;
+      }
 
-/* background section */ 
-#background h2 {
-  color: #0096FF;
-}
+    /*prjects section*/
+    .grid-tc {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        max-width: auto;
+        min-width: 400px;
+        grid-template-areas: 
+        "greece-poster tc-text greece-b"
+      }
+      
+      #greece-poster {
+        grid-area: greece-poster;
+      }
+      
+      #greece-tc-text {
+        grid-area: tc-text;
+      }
+      
+      #greece-b {
+        grid-area: greece-b;
+      }
 
-#background p {
-  padding-left: 20px;
-}
+    .grid-is {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-gap: 20px;
+        max-width: auto;
+        min-width: 400px;
+        grid-template-areas: 
+        "f-text f-text nfl"
+        "davis fantasize nfl"
+    }
 
-/* flag section */
-#flag img {
-  padding: 70px 0px;
-}
+      #davis {
+        grid-area: davis;
+      }
 
-/* Geography section */ 
-#geography h2{
-  color: #7393B3;
-}
+      #fantasize {
+        grid-area: fantasize;
+      }
 
-#geography article {
-  margin-bottom: 20px;
-}
+      #nfl {
+        grid-area: nfl;
+      }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+      #f-text {
+        grid-area: f-text;
+        margin-left: 20px;
+      }
+      
+    .grid-college {
+      display: grid;
+        grid-template-columns: 1.5fr 1fr 2fr;
+        grid-gap: 20px;
+        max-width: auto;
+        min-width: 400px;
+        grid-template-areas: 
+        "college-text runway hadid"
+        "college-text dance-cover infographic"
+    }
 
-table th, table td {
-  border: 1px solid #000;
-  padding: 5px;
-} 
+    #runway {
+      grid-area: runway;
+    }
 
-#geography img {
-  border: 2px solid black;
-}
+    #hadid {
+      grid-area: hadid;
+    }
 
-/* People and Society section */
-#people-and-society h2{
-  color: #7393B3;
-}
+    #college-text {
+      grid-area: college-text;
+      margin-left: 20px;
+    }
 
-#people-and-society article {
-  margin-bottom: 20px;
-}
+    #dance-cover {
+      grid-area: dance-cover;
+    }
 
-table {
-  width: 100%;
-}
-
-table th, table td {
-  border: 1px solid #000;
-  padding: 5px;
-}
-
-/* Environment section */
-#environment h2{
-  color: #7393B3;
-}
-
-/* Footer section */
-#footer a {
-  color: #0000EE;
-}
-
-#footer a:link {
-  color: #0000EE;
-}
-
-#footer a:visited {
-  color: #551A8B;
-}
-
-#footer a:hover {
-  color: #0096FF;
-}
-
-#footer a:active {
-  color: #000080;
-}
+    #infographic {
+      grid-area: infographic;
+    }
+    
+    .projects h2 {
+      color: #e7bc3a;
+      font-size: 46px;
+      margin-bottom: 5px;
+    }

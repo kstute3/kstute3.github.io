@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>Dance</title>
   </head>
-  <body id="return-to-top">
-    <header>
+  <body class="dance" id="return-to-top">
+    <header id="header">
       <h1>Dance Portfolio</h1>
+      <link rel="stylesheet" href="css/style.css">
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -15,27 +16,28 @@
         </ul>
       </nav>
     </header>
-    <section>
-      <figure>
-        <img src="images/dance-images/backbend.jpg" alt="Ballet Bend Over">
-      </figure>
-    </section>
-    <section>
-      <figure>
-        <img src="images/dance-images/split-jump.jpg" alt="Ballet Split Jump">
-      </figure>
-    </section>
-    <section>
-      <figure>
-        <img src="images/dance-images/bendover.jpg" alt="Ballet Back Bend">
-      </figure>
-    </section>
+    <main>
+      <section class="grid-topdance">
+        <figure id="dance-img1">
+          <img src="images/dance-images/backbend.jpg" alt="Ballet Bend Over">
+        </figure>
+        <figure id="dance-img2">
+          <img src="images/dance-images/split-jump.jpg" alt="Ballet Split Jump">
+        </figure>
+        <figure id="dance-img3">
+          <img src="images/dance-images/bendover.jpg" alt="Ballet Back Bend">
+        </figure>
+      </section>
 
-    <section>
-      <h2>Dance Career</h2>
-      <p>I danced at New England Academy of Dance in New Canaan, Connecticut for 15 years studying ballet. I mainly did performance dance, with my favorite roles being Sugar Plum Fairy from The Nutcrcaker and Odette from Swanlake. I also did competition dance for 3 years. I competed in both the Youth American Grand Prix and The Connecticut Classic.</p>
-      <p>Over the summers of 2015-2019, I danced with the Bolshoi ballet. For the summers of 2020 and 2021, I went on tour with Thomas-Ortiz professional dance company. Today, I continue my dance career taking advanced ballet classes at the University of Miami.</p>
+      <section class="grid-career">
 
+        <article id="career-background">
+          <h2>Dance Career</h2>
+          <p>I danced at New England Academy of Dance in New Canaan, Connecticut for 15 years studying ballet. I mainly did performance dance, with my favorite roles being Sugar Plum Fairy from The Nutcrcaker and Odette from Swanlake. I also did competition dance for 3 years. I competed in both the Youth American Grand Prix and The Connecticut Classic.</p>
+          <p>Over the summers of 2015-2019, I danced with the Bolshoi ballet. For the summers of 2020 and 2021, I went on tour with Thomas-Ortiz professional dance company. Today, I continue my dance career taking advanced ballet classes at the University of Miami.</p>
+        </article>
+
+        <article id="highlights">
           <h3>Highlights</h3>
           <table>
             <tr>
@@ -71,7 +73,7 @@
             <tr>
               <td>2020</td>
               <td>The Connecticut Classic</td>
-              <td>???</td>
+              <td>Aurara from Sleeping Beauty</td>
               <td>Third Place Senior Classical Division</td>
             </tr>
             <tr>
@@ -99,35 +101,56 @@
               <td>n/a</td>
             </tr>
           </table>
+        </article>
       </section>
+
       <section>
         <h2>Here are some of my favorite dance performances:</h2>
+      </section>  
+      <section class="grid-performances">
           
-          <h3>Example 1</h3>
+          <article id="nikiya-text">
+            <h3>Nikiya from La Bayadare</h3>
+              <p>Nikiya is the protagonist of the ballet La Bayadere, a tragic love story set in India. She is a temple dancer (bayadere) who falls in love with the warrior Solor, who is promised to another woman. Nikiya's love for Solor drives the story forward, as she struggles against the interference of the High Brahmin and the Rajah's daughter, who also loves Solor. Despite her tragic end, Nikiya is celebrated as one of the most iconic and challenging roles in classical ballet, known for its demanding technical and dramatic requirements.</p>
+              <p>I performed Nikiya in 2019 in the Connecticut Classic Ballet Competition. I recieved third place in the junior classical division. This has been my favorite solo competition piece I have performed. I loved the slow and emotional dance.</p>
+          </article>
+          <article id="nikiya-image">
             <figure>
-              <img src="images/dance-images/dance1.jpg" alt="Dance Performace 1">
-              <figcaption>Description of Image</figcaption>
+              <img src="images/dance-images/nikiya-image.jpg" alt="Nikiya Competition Image">
+              <figcaption>Performance of Nikiya in 2019 Connecticut Classic Competition</figcaption>
             </figure>
-            <p>Description of the Performance</p>
+          </article>
+          
+          <article id="arabian-text">
+            <h3>Arabian from The Nutcracker</h3>
+            <p>The Arabian Princess is a character in the ballet The Nutcracker, portrayed in a pas de deux with the Prince. She is depicted as a mysterious and sensual figure, dancing in a slow and sinuous style with flowing veils and exotic movements.</p>
+            <p>This role was my first big lead role that I performed at my studio. It was a partnered dance with my director, Ted Thomas. This was the most fun piece I did in the nutcracker with the fun lifts and slow movements.</p> 
+            <p>I actually started off at this role as an understudy. Sadly, the girl that was supposed to do it broke her back. For this dance, you need to have a very flexible but strong back. You are being thrown into deep backbends fast. Having to partner, you need to make sure that you can still keep the support in your back for the hard lifts.</p>
+          </article>
+          <article id="arabian-image">
+            <figure>
+              <img src="images/dance-images/arabian-image.jpg" alt="Arabian Performace">
+              <figcaption>Performance of the Arabian Princess in New England Acadeny of Dance's 2020 performace of The Nutcracker</figcaption>
+            </figure>
+          </article>
 
-          <h3>Example 2</h3>
+          <article id="sugar-text">
+            <h3>Sugar Plum from The Nutcracker</h3>
+            <p>The Sugar Plum Fairy is a character in the ballet The Nutcracker, and is the ruler of the Land of Sweets. She is portrayed as a graceful figure, dancing in a light and delicate style with quick footwork and intricate pointe work. The Sugar Plum Fairy is a celebrated role in ballet, and her solo dance, the "Dance of the Sugar Plum Fairy," is one of the most recognizable and beloved pieces of classical music.</p>
+            <p>This role was my hardest role I did in The Nutcracker. Due to Covid-19, the first year I performed this role I did the whole thing wearing a mask. This helped me build up my stamina. The next year, we were finally able to take off our masks and we performed with the Norwalk Symphony Orchestra.</p>
+          </article>
+          <article id="sugar-image">
             <figure>
-              <img src="images/dance-images/dance2.jpg" alt="Dance Performace 2">
-              <figcaption>Description of Image</figcaption>
+              <img src="images/dance-images/sugarplum-image.jpg" alt="Sugar Plum Performace">
+              <figcaption>Performance of the Sugar Plum Fairy in New England Acadeny of Dance's 2022 performace of The Nutcracker</figcaption>
             </figure>
-            <p>Description of the Performance</p>
-
-          <h3>Example 3</h3>
-            <figure>
-              <img src="images/dance-images/dance3.jpg" alt="Dance Performace 3">
-              <figcaption>Description of Image</figcaption>
-            </figure>
-            <p>Description of the Performance</p>
-      </section>
+          </article>
+        </section>
      
-      <footer>
-        <p><a href="#return-to-top">Return to top</a></p>
-        <p>&copy; 2023 Katie Stute. All rights reserved.</p>
-      </footer>
+        <footer id="footer">
+          <p><a href="#return-to-top">Return to top</a></p>
+          <p>&copy; 2023 Katie Stute. All rights reserved.</p>
+        </footer>
+    </main>
   </body>
 </html>
